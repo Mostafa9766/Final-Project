@@ -31,12 +31,12 @@ resource "google_container_node_pool" "node-pool" {
   name       = "node-pool"
   cluster    = google_container_cluster.private-cluster.id
   location       = google_container_cluster.private-cluster.location
-  node_count = 2
+  node_count = 1
 
   node_config {
     preemptible  = true
-    machine_type = "e2-micro"
-    disk_size_gb = 30
+    machine_type = "e2-medium"
+    disk_size_gb = 100
 
     service_account = google_service_account.gke_service_account.email
      oauth_scopes = [

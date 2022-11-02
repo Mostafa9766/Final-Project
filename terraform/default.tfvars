@@ -1,6 +1,6 @@
 project-id="mostafa-ahmed-gomaa"
 region="us-central1"
-zone="us-central1-a"
+zone="us-central1-b"
 vpc-name="task-vpc"
 subnet1-name="management-subnet"
 subnet2-name="restricted-subnet"
