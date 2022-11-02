@@ -18,12 +18,14 @@ This project contains:
 
 `gcloud compute ssh --zone "us-central1-b" "management-ce"  --tunnel-through-iap --project "mostafa-ahmed-gomaa"`
 
+
  ![alt text](https://github.com/Mostafa9766/Final-Project/blob/master/infra%20and%20jenkins%20deployment%20screenshots/ssh%20private%20instance?raw=true)
 
 - install kubectlg gcloud.
 ` gcloud components install kubectl`
 
 - join cluster from private instance.
+
 `gcloud container clusters get-credentials cluster-1 --zone us-central1-b --project mostafa-ahmed-gomaa`
 
  ![alt text](https://github.com/Mostafa9766/Final-Project/blob/master/infra%20and%20jenkins%20deployment%20screenshots/join%20private-%20cluster%20from%20instance?raw=true)
